@@ -1,6 +1,9 @@
 NG Basics
 ===
 
+Lecture 0:
+---
+
 - set up basic project (NEA)
 - src files
 - create "myApp" (ng app) and link to html
