@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NG Basics</title>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/ngBasics.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.css">
+    <link rel="stylesheet" href="styles/blackNBlue.css">
+  </head>
+  <body ng-app='myApp'>
+    <h1>NG Basics</h1>
+    <div ng-controller='InventoryController as ic'>
+      <input type='text' placeholder="name" ng-model='ic.nameIn' />
+      <input type='text' placeholder="description" ng-model='ic.descriptionIn' />
+      <button ng-click='ic.addItem()'>Add Item</button>
+    </div>
+  </body>
+</html>
