@@ -14,6 +14,14 @@
       <input type='text' placeholder="name" ng-model='ic.nameIn' />
       <input type='text' placeholder="description" ng-model='ic.descriptionIn' />
       <button ng-click='ic.addItem()'>Add Item</button>
+      <div class='container row'>
+        <div ng-repeat='thing in ic.items' class='col-sm-3'>
+          <h3>{{ thing.name }}</h3>
+          <p>
+            {{ thing.description }}
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

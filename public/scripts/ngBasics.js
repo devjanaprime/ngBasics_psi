@@ -1,5 +1,5 @@
 var myApp = angular.module( 'myApp', [] );
-
+// set up a controller
 myApp.controller( 'InventoryController', function(){
   console.log( 'NG' );
   // variable global to this controller
@@ -18,6 +18,8 @@ myApp.controller( 'InventoryController', function(){
     // push item into array
     vm.items.push( newItem );
     console.log( 'items:', vm.items );
+    // empty inputs
+    vm.nameIn='';
+    vm.descriptionIn='';
   }; //end add item
-
 }); //end inventory controller
