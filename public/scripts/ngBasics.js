@@ -23,3 +23,17 @@ myApp.controller( 'InventoryController', function(){
     vm.descriptionIn='';
   }; //end add item
 }); //end inventory controller
+
+myApp.controller('OmdbController', function($http) {
+
+  // view model
+  var vm = this;
+
+  $http({
+    method: 'GET',
+    url: 'http://www.omdbapi.com/?t=jaws'
+  }).then(function success(response) {
+    console.log('ombd resp ->', response.data);
+    vm.movieData = response.data;
+  });
+});

@@ -23,5 +23,10 @@
         </div>
       </div>
     </div>
+
+    <div ng-controller="OmdbController as omdb">
+      {{omdb.movieData.Title}}
+      <img ng-src="{{omdb.movieData.Poster}}" alt="">
+    </div>
   </body>
 </html>
