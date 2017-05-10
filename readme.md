@@ -21,4 +21,5 @@ Lecture 1a: Server Side Inventory
 - setup get route for the items
 - setup a post route to add items
 - server side array
+- update server side array
 - $http calls to new routes
