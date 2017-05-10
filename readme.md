@@ -23,4 +23,5 @@ Lecture 1a: Server Side Inventory
 - server side array
 - update server side array
 - $http calls to new routes
+- on get route response, update vm.items (local array)
 - ng-init to run server get call on page load
