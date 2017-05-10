@@ -25,3 +25,15 @@ Lecture 1a: Server Side Inventory
 - $http calls to new routes
 - on get route response, update vm.items (local array)
 - ng-init to run server get call on page load
+
+Lecture 2: MongoDB
+---
+
+- npm install mongoose
+- require mongoose
+- connect to mongo
+- create schema
+- create model
+- test write
+- test read
+- remove server side array

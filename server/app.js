@@ -6,6 +6,7 @@ var bodyParser = require( 'body-parser' );
 // our modules
 var index = require( './modules/index' );
 var inventory = require( './modules/inventory' );
+
 // uses
 app.use( express.static( 'public' ) );
 app.use( bodyParser.urlencoded( { extended: true } ) );
