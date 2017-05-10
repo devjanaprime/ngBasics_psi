@@ -9,6 +9,7 @@ var inventory = require( './modules/inventory' );
 // uses
 app.use( express.static( 'public' ) );
 app.use( bodyParser.urlencoded( { extended: true } ) );
+app.use( bodyParser.json() );
 // routes
 app.use( '/', index );
 app.use( '/inventory', inventory );

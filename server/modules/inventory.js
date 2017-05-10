@@ -13,6 +13,7 @@ router.get( '/', function( req, res ){
 
 router.post( '/', function( req, res ){
   console.log( 'inventory router post call:', req.body );
+  items.push( req.body );
   res.sendStatus( 200 );
 }); //end get
 
