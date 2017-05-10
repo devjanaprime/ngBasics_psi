@@ -22,4 +22,8 @@ myApp.controller( 'InventoryController', function(){
     vm.nameIn='';
     vm.descriptionIn='';
   }; //end add item
+
+  vm.getItems = function(){
+    console.log( 'in getItems' );
+  }; // end getItems
 }); //end inventory controller
