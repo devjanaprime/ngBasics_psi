@@ -5,6 +5,7 @@
     <title>NG Basics</title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="scripts/ngBasics.js" charset="utf-8"></script>
+    <script src="scripts/getItems-service.js" type="text/javascript"></script>
     <link rel="stylesheet" href="vendors/bootstrap.css">
     <link rel="stylesheet" href="styles/blackNBlue.css">
   </head>
@@ -14,6 +15,8 @@
       <input type='text' placeholder="name" ng-model='ic.nameIn' />
       <input type='text' placeholder="description" ng-model='ic.descriptionIn' />
       <button ng-click='ic.addItem()'>Add Item</button>
+      <button type="button" ng-click='ic.counting()'>Count for Me!</button>
+      <h2>The count is...{{ic.count}}</h2>
       <div class='container row'>
         <div ng-repeat='thing in ic.items' class='col-sm-3'>
           <h3>{{ thing.name }}</h3>
